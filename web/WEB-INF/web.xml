@@ -4,6 +4,14 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
     <servlet>
+        <servlet-name>AccountEndpoint</servlet-name>
+        <servlet-class>demo.endpoint.AccountEndpoint</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountEndpoint</servlet-name>
+        <url-pattern>/_api/v1/accounts</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>RegisterController</servlet-name>
         <servlet-class>demo.controller.RegisterController</servlet-class>
     </servlet>
